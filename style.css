@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: #10182b;
+    color: white;
+    /* background-image: url(/img/download.png)!important; */
+
+}
+main{
+    display: flex;
+}
+nav{
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background: #10182b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 2px solid #1f2b44;
+}
+.navbar i{
+    font-size: 15px;
+    background-color: #DDDDDD31;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+}
+.navbar i:hover{
+    background-color: #17b978;
+}
+
+ .navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    line-height: 5px;
+} 
+
+ul {
+    height: 100%;
+}
+.logo img{
+    height: 75px;
+    border-radius: 50%;
+    border:2px solid #1f2b44;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ .navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+} 
+.icon-inner, .ionicon, svg {
+    display: block;
+    height: 90%;
+    width: 100%;
+}
+.contents{
+    margin-left: 100px;
+    width: 93%;
+    /* padding: 10px 20px; */
+    /* background-color: #17b978; */
+    overflow: auto;
+}
+section .one{
+    text-align: center;
+}
+.first-page{
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+}
+.first-page .my-name{
+    text-align: center;
+    height: 28vh;
+    line-height: 121px;
+}
+.first-page .my-name p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #17b978;
+}
+.first-page .my-name h1 span{
+    color: transparent;
+    -webkit-text-stroke: 1px #17b978;
+    line-height: 50px;
+    background-image: url(/img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    /* margin-left: -10px; */
+}
+.first-page .my-name h1{
+    font-size: 70px;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+#typo{
+color: white;
+}
+.para{
+    width: 80%;
+    padding-top: 30px;
+}
+.first-page p{
+
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    /* line-height: 20px; */
+    line-height: 25px;
+}
+.cv-button{
+    margin-top: 20px;
+}
+.cv-button button{
+    padding: 10px 25px;
+    border: 2px solid #17b978;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 5px;
+}
+/* Hover */
+.cv-button button:hover{
+    background-color: #17b978 ;
+}
+/* Section 2 */
+section .two{
+    background-image: url(/img/download.png)!important;
+}
+.heading{
+    height: 35vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    bottom: 115px;
+    /* background-color: blue; */
+}
+.resume{
+    color: #65656529;
+    font-size: 155px;
+}
+.about-me{
+    font-size: 60px;
+    position: relative;
+    top: 100px;
+    font-size: 75px;
+}
+.about-me span{
+    color: #17b978;
+}
+
+    
+/* Image */
+.my-info{
+    line-height: 30px;
+}
+.about-content{
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    bottom: 70px;
+}
+.mypic img {
+    height: 50vh;
+    padding-right: 30px;
+}
+.personal-info h2{
+    font-size: 30px;
+}.personal-info p{
+    font-size: 17px;
+    color: #E2EfF0;
+}
+.personal-info span{
+    font-size: 15px;
+    color: #94A3B8;
+}
+/* My Skills */
+.my-skill-heading{
+
+}
+.my-skills{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 60px;
+    position: relative;
+    /* top: 100px; */
+    font-size: 75px;
+}
+.my-skills span{
+    color: #17b978;
+}
+.experience{
+    color: #65656529;
+    font-size: 135px;
+    position: relative;
+    bottom: 90px;
+}
+.personal-info p{
+    width: 80%;
+    font-size: 20px;
+}
+/* Icon */
+.skills-icon{
+    display: flex;
+    border: 2px solid #17b978;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
