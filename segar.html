@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #333;
+        }
+
+        .event {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .event::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .event.education::after {
+            background-color: #3498db;
+        }
+
+        .event.internship::after {
+            background-color: #e67e22;
+        }
+
+        .event .content {
+            margin-left: 20px;
+        }
+
+        .event .title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="event education">
+            <div class="content">
+                <div class="title">Bachelor's Degree</div>
+                <div class="date">2010 - 2014</div>
+                <div class="description">University XYZ</div>
+            </div>
+        </div>
+        <div class="event internship">
+            <div class="content">
+                <div class="title">Software Developer Intern</div>
+                <div class="date">Summer 2013</div>
+                <div class="description">Company ABC</div>
+            </div>
+        </div>
+        <!-- Add more events here -->
+    </div>
+
+    <script>
+        // You can use JavaScript to dynamically add more events to the timeline if needed.
+    </script>
+</body>
+</html>
+
